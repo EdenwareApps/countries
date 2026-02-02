@@ -1,0 +1,39 @@
+{
+  "name": "geo-countries",
+  "version": "1.0.0",
+  "description": "Country data with query API, distance, nearest countries, and multi-language names (powered by world-countries)",
+  "author": "Edenware <contact@edenware.app>",
+  "homepage": "https://edenware.app",
+  "keywords": [
+    "countries",
+    "country-data",
+    "iso-3166",
+    "geography",
+    "timezone",
+    "population",
+    "distance",
+    "i18n",
+    "world-countries"
+  ],
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.cjs",
+    "lib",
+    "data"
+  ],
+  "dependencies": {
+    "world-countries": "^5.1.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.js"
+  }
+}
