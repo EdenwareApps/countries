@@ -1,4 +1,4 @@
-# geo-countries
+# @edenware/countries
 
 Country data with query API, distance, nearest countries, and multi-language names. Powered by [world-countries](https://www.npmjs.com/package/world-countries) with a supplemental dataset for timezone offsets and population.
 
@@ -14,7 +14,7 @@ Country data with query API, distance, nearest countries, and multi-language nam
 ## Installation
 
 ```bash
-npm install geo-countries
+npm install @edenware/countries
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ npm install geo-countries
 ### ESM
 
 ```javascript
-import geo from 'geo-countries';
+import geo from '@edenware/countries';
 
 const country = geo.getCountry('US');
 console.log(country?.iso); // United States
@@ -40,7 +40,7 @@ const nearest = geo.getNearest('US', ['CA', 'MX', 'BR'], 2);
 ### CommonJS
 
 ```javascript
-const geo = require('geo-countries');
+const geo = require('@edenware/countries');
 
 const country = geo.getCountry('us');
 console.log(country?.iso);
@@ -49,7 +49,7 @@ console.log(country?.iso);
 ### Custom instance
 
 ```javascript
-import geo, { Countries, loadData } from 'geo-countries';
+import geo, { Countries, loadData } from '@edenware/countries';
 
 const data = loadData();
 const instance = new Countries(data);
