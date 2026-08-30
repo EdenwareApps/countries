@@ -101,6 +101,11 @@ describe('geo-countries', () => {
       assert.ok(Array.isArray(codes));
       assert.ok(codes.includes('br'));
     });
+    it('accepts ISO 639-1 (2-letter) codes too', () => {
+      const codes = geo.getCountriesFromLanguage('pt');
+      assert.ok(Array.isArray(codes));
+      assert.ok(codes.includes('br'));
+    });
   });
 
   describe('query', () => {

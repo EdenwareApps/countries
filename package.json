@@ -1,6 +1,6 @@
 {
   "name": "@edenware/countries",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Country data with query API, distance, nearest countries, and multi-language names (powered by world-countries)",
   "author": "Edenware <contact@edenware.app>",
   "homepage": "https://github.com/EdenwareApps/countries#readme",

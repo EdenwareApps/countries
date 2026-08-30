@@ -62,7 +62,7 @@ const instance = new Countries(data);
 - `getCountries()` – array of all codes
 - `getCountriesFromTZ(tzMins)` – codes in that timezone offset (minutes)
 - `getCountryLanguages(code)` – array of language codes (ISO 639-3)
-- `getCountriesFromLanguage(locale)` – codes where that language is used
+- `getCountriesFromLanguage(locale)` – codes where that language is used (accepts ISO 639-1 2-letter like `'pt'` or ISO 639-3 3-letter like `'por'`)
 - `query(fields, where, orderBy, desc)` – filter/order; `fields` can be string (e.g. `'code,iso'`) or empty for all
 - `getRow(fields, where, orderBy, desc)` – first row of query
 - `getVar(field, where, orderBy, desc)` – single field value
